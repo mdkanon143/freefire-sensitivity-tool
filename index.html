@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Get the perfect Free Fire sensitivity & DPI settings based on your phone and playstyle. Find the best characters with active and passive skills.">
+  <meta name="keywords" content="Free Fire, Sensitivity, DPI, Character, Gaming Tools, Mobile Optimization">
+  <meta name="author" content="Kanan Hasan">
+  <title>Free Fire Sensitivity Tool</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Facebook Pixel -->
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);
+    t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window,document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'YOUR_PIXEL_ID'); 
+    fbq('track', 'PageView');
+  </script>
+  <!-- End Facebook Pixel -->
+</head>
+<body onload="startApp()">
+  <div id="loader" class="loader">Loading...</div>
+  <div id="followPage" class="center-screen" style="display:none;">
+    <h1>FOLLOW MY PAGE</h1>
+    <img src="https://via.placeholder.com/120" alt="Profile" class="profile-img" />
+    <p>I'm Kanan. I created this website.</p>
+    <button onclick="goToFacebook()">📘 Facebook</button>
+    <div class="fb-like" data-href="https://www.facebook.com/share/1YfT9EDmcP/" data-width="" data-layout="button" data-action="like" data-size="large" data-share="true"></div>
+  </div>
+  <div id="mainApp" style="display:none;" class="container">
+    <h2 class="fade-in">FREE FIRE SENSITIVITY</h2>
+    <input type="text" id="phoneModel" placeholder="Enter your phone model..." />
+    <button onclick="getSettings()">GET SETTINGS</button>
+    <div id="settings" class="output-box"></div>
+    <h3>Select Your Role</h3>
+    <div class="roles">
+      <button onclick="selectRole('Supporter')">SUPPORTER</button>
+      <button onclick="selectRole('Sniper')">SNIPER</button>
+      <button onclick="selectRole('Rusher')">RUSHER</button>
+      <button onclick="selectRole('Grenadier')">GRENADIER</button>
+    </div>
+    <div id="character" class="output-box"></div>
+  </div>
+  <script src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v15.0" async defer crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>
